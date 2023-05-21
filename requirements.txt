@@ -3,3 +3,4 @@ langchain
 kor
 markdownify
 pypdf
+STREAMLIT
