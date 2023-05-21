@@ -29,14 +29,14 @@ class formatOutput:
         self.output = gpt_output
 
     def print_output(self):
-        st.json(output)
+        st.json(self.output)
 
     def output_table(self):
-        table = pd.DataFrame(output['prenupschema'])
+        table = pd.DataFrame(self.output['prenupschema'])
         return table
 
     def output_csv(self):
-        table = pd.DataFrame(output['prenupschema'])
+        table = pd.DataFrame(self.output['prenupschema'])
         table.to_csv('parsed_prenup_data.csv', index=False)
 
 
